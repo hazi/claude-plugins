@@ -1,0 +1,41 @@
+# data
+*.csv
+*.tsv
+*.json
+*.jsonl
+*.yaml
+*.yml
+*.xml
+*.sql
+
+# markup
+*.html
+*.htm
+*.svg
+
+# markup/binary
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.ico
+*.bmp
+*.pdf
+*.zip
+*.gz
+*.tar
+*.br
+*.woff
+*.woff2
+*.ttf
+*.eot
+
+# generated
+*.min.js
+*.min.css
+*.map
+package-lock.json
+yarn.lock
+Gemfile.lock
+pnpm-lock.yaml

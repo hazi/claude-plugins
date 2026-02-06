@@ -1,0 +1,8 @@
+{
+  "name": "jplint",
+  "version": "0.1.0",
+  "description": "textlint with preset-japanese, JTF style, and additional Japanese proofreading rules",
+  "author": {
+    "name": "HAZI"
+  }
+}

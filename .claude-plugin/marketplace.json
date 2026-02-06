@@ -1,0 +1,11 @@
+{
+  "name": "hazi-plugins",
+  "owner": { "name": "HAZI" },
+  "plugins": [
+    {
+      "name": "jplint",
+      "description": "Japanese text linter using textlint with preset-japanese, JTF style, and prh dictionaries",
+      "source": "./plugins/jplint"
+    }
+  ]
+}

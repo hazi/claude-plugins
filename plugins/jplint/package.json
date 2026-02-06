@@ -1,0 +1,15 @@
+{
+  "name": "claude-plugin-jplint",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "textlint": "^15.5.1",
+    "textlint-rule-ja-no-abusage": "^3.0.0",
+    "textlint-rule-ja-no-redundant-expression": "^4.0.1",
+    "textlint-rule-ja-no-successive-word": "^2.0.1",
+    "textlint-rule-no-hankaku-kana": "^2.0.1",
+    "textlint-rule-preset-japanese": "^10.0.4",
+    "textlint-rule-preset-jtf-style": "^3.0.3",
+    "textlint-rule-prh": "^6.1.0"
+  }
+}
