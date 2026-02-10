@@ -25,8 +25,19 @@ Claude Code が `gh api` を直接使う際の問題を解決：
 - **PR issue comments** -- 会話欄コメントの取得
 - **GitHub Actions** -- run 一覧、失敗ログ取得、ワークフロー/ブランチ指定
 
-## 権限
+## 権限設定
 
-`/gh-ops` でスキルをロードすると、ラッパースクリプトの実行が自動的に許可される。`settings.json` への追加設定は不要。
+スクリプト実行時に毎回確認ダイアログが出る。省略したい場合は `.claude/settings.json` の `permissions.allow` にスクリプトのパスを追加する。
 
-スクリプト以外の `gh api` 等を使う場合は都度確認ダイアログが出る。
+```json
+{
+  "permissions": {
+    "allow": [
+      "Bash(/path/to/gh-ops/scripts/pr-comments.sh *)",
+      "Bash(/path/to/gh-ops/scripts/run-logs.sh *)"
+    ]
+  }
+}
+```
+
+`/path/to/gh-ops/` はプラグインの実際のインストールパスのフルパスに置き換える（`~` や `$HOME` は使用不可）。通常は `~/.claude/plugins/marketplaces/hazi-plugins/plugins/gh-ops/` にインストールされる。スクリプトは GET のみなので書き込み操作の心配はない。

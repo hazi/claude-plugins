@@ -1,7 +1,7 @@
 ---
 name: gh-ops
 description: "This skill should be used when the user asks to 'check PR comments', 'PRのコメント確認', 'review PR feedback', 'get review comments', 'レビューコメント取得', 'check CI logs', 'CI確認', 'check GitHub Actions', 'why did CI fail', 'CIなぜ落ちた', or needs to retrieve PR review comments or GitHub Actions run logs using gh CLI."
-allowed-tools: "Bash(*/gh-ops/scripts/*:*)", Read
+allowed-tools: Read
 version: 0.1.0
 ---
 
@@ -70,9 +70,9 @@ ${CLAUDE_PLUGIN_ROOT}/scripts/run-logs.sh owner/repo --workflow ci.yml
 
 ## やってはいけないパターンまとめ
 
-| パターン | 問題 | 正しい方法 |
-|----------|------|-----------|
-| `pulls/{number}/comments/{id}` | 404 | `pulls/comments/{id}` |
-| `\| jq` でパイプ | 出力過大で truncate | `--jq` オプション |
-| `contains()` を数値/オブジェクトに使用 | jq 型エラー | `==` か `test()` |
-| `gh run view --log` を最初に試す | 出力が巨大 | `--log-failed` を先に |
+| パターン                               | 問題                | 正しい方法            |
+| -------------------------------------- | ------------------- | --------------------- |
+| `pulls/{number}/comments/{id}`         | 404                 | `pulls/comments/{id}` |
+| `\| jq` でパイプ                       | 出力過大で truncate | `--jq` オプション     |
+| `contains()` を数値/オブジェクトに使用 | jq 型エラー         | `==` か `test()`      |
+| `gh run view --log` を最初に試す       | 出力が巨大          | `--log-failed` を先に |
