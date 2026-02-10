@@ -3,7 +3,7 @@ name: jplint
 description: "Japanese text linter using textlint with preset-japanese and JTF style rules. Use when asked to check Japanese writing quality, lint documents, review Japanese text style, or proofread Japanese prose."
 argument-hint: "[file or directory paths...]"
 allowed-tools: Read, Glob, Edit
-version: 0.1.0
+version: 0.2.0
 ---
 
 # Japanese Text Lint

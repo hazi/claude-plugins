@@ -28,13 +28,13 @@ Claude Code 用の日本語テキスト校正プラグイン。textlint をベ�
 {
   "permissions": {
     "allow": [
-      "Bash(/path/to/jplint/scripts/lint.sh *)"
+      "Bash(/path/to/jplint/scripts/lint.sh:*)"
     ]
   }
 }
 ```
 
-`/path/to/jplint/` はプラグインの実際のインストールパスのフルパスに置き換える（`~` や `$HOME` は使用不可）。通常は `~/.claude/plugins/marketplaces/hazi-plugins/plugins/jplint/` にインストールされる。
+`/path/to/jplint/` はプラグインの実際のインストールパスのフルパスに置き換える（`~` や `$HOME` は使用不可）。通常は `~/.claude/plugins/cache/hazi-plugins/jplint/0.2.0/` にインストールされる。
 
 ## Acknowledgements
 

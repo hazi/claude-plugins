@@ -33,11 +33,11 @@ Claude Code が `gh api` を直接使う際の問題を解決：
 {
   "permissions": {
     "allow": [
-      "Bash(/path/to/gh-ops/scripts/pr-comments.sh *)",
-      "Bash(/path/to/gh-ops/scripts/run-logs.sh *)"
+      "Bash(/path/to/gh-ops/scripts/pr-comments.sh:*)",
+      "Bash(/path/to/gh-ops/scripts/run-logs.sh:*)"
     ]
   }
 }
 ```
 
-`/path/to/gh-ops/` はプラグインの実際のインストールパスのフルパスに置き換える（`~` や `$HOME` は使用不可）。通常は `~/.claude/plugins/marketplaces/hazi-plugins/plugins/gh-ops/` にインストールされる。スクリプトは GET のみなので書き込み操作の心配はない。
+`/path/to/gh-ops/` はプラグインの実際のインストールパスのフルパスに置き換える（`~` や `$HOME` は使用不可）。通常は `~/.claude/plugins/cache/hazi-plugins/gh-ops/0.1.0/` にインストールされる。スクリプトは GET のみなので書き込み操作の心配はない。
