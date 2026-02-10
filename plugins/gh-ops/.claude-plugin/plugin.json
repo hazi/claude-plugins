@@ -1,0 +1,8 @@
+{
+  "name": "gh-ops",
+  "version": "0.1.0",
+  "description": "gh CLI 読み取り操作の安全なラッパー",
+  "author": {
+    "name": "HAZI"
+  }
+}

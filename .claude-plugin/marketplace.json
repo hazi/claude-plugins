@@ -6,6 +6,11 @@
       "name": "jplint",
       "description": "Japanese text linter using textlint with preset-japanese, JTF style, and prh dictionaries",
       "source": "./plugins/jplint"
+    },
+    {
+      "name": "gh-ops",
+      "description": "gh CLI 読み取り操作の安全なラッパー（PR コメント取得、Actions ログ確認）",
+      "source": "./plugins/gh-ops"
     }
   ]
 }
