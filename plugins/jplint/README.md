@@ -20,6 +20,22 @@ Claude Code 用の日本語テキスト校正プラグイン。textlint をベ�
 /jplint                     # git で変更されたファイルを自動検出
 ```
 
+## 権限設定
+
+スクリプト実行時に毎回確認ダイアログが出る。省略したい場合は `.claude/settings.json` の `permissions.allow` にスクリプトのパスを追加する。
+
+```json
+{
+  "permissions": {
+    "allow": [
+      "Bash(/path/to/jplint/scripts/lint.sh *)"
+    ]
+  }
+}
+```
+
+`/path/to/jplint/` はプラグインの実際のインストールパスのフルパスに置き換える（`~` や `$HOME` は使用不可）。通常は `~/.claude/plugins/marketplaces/hazi-plugins/plugins/jplint/` にインストールされる。
+
 ## Acknowledgements
 
 prh 辞書は [テキスト校正くん](https://github.com/ics-creative/project-japanese-proofreading)（ICS INC.）の [textlint-rule-preset-icsmedia](https://github.com/ics-creative/textlint-rule-preset-icsmedia) をベースにしています。
